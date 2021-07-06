@@ -35,6 +35,7 @@ header h1{
 
 
 #footer {
+	position: absolute;
 	width: 100%;
 	left: 0% ;	
 	bottom: 0%;
