@@ -1,0 +1,75 @@
+
+@font-face { /* importar fonte brasil */
+	font-family: brasil;
+	src: url(fonte/MetalEncasement.ttf);
+}
+
+html, body {height:100%;position: relative;}
+
+
+header{
+	background: rgb(38,40,37);
+	background: linear-gradient(90deg, rgba(38,40,37,1) 0%, rgba(162,162,76,1) 29%, rgba(215,211,44,1) 55%, rgba(245,236,5,1) 100%);
+	display: flex;
+    position: relative;
+    border-bottom: 2pt solid black;
+	margin-bottom: 50pt;
+}
+
+
+header img{
+	height: 100pt;
+	right: 600pt;
+}
+
+header h1{
+	position: relative;
+	display: inline;
+	text-align: center;
+	/*left: 35%;
+	*/
+	margin-left: 25%;
+}
+
+
+
+
+#footer {
+	width: 100%;
+	left: 0% ;	
+	bottom: 0%;
+	/*height: 10%;*/
+	margin-top: 5pt;
+}
+
+
+
+.container-fluid .row .col #ramais{
+	display: inline;
+}
+
+#tituloramais{
+	text-align: center;
+	margin-left: 30pt;
+	margin-right: 30pt;
+}
+
+#comercial{
+	margin-left: 30pt;
+	margin-right: 30pt;
+}
+
+/*
+#deposito{
+	position: absolute;
+	display: none;
+	top: 31pt;
+	right: 50pt;
+
+}
+
+#administrativo{
+	position: absolute;
+	top: 31pt;
+	right: 300pt;
+}*/

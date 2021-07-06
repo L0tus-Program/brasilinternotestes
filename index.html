@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="./arquivos/icone.ico"/>
+    <title>Interno Brasil dos Parafusos</title>
+</head>
+
+<body >
+  <header> <!-- LOGO E TÍTULO -->
+    <img  src="./arquivos/brasil-removebg-preview.png" alt="Logo da Brasil">
+    <h1>Uso interno Brasil dos Parafusos</h1>
+  </header>
+
+
+
+<div class="container-fluid" id="principal">
+  <div class="row">
+    <div class="col-8"  > <!-- COLUNA 1 MENU -->
+      <nav class="menu"> <!-- MENU PRINCIPAL -->
+        <div class="dropdown"><!--Botão de arquivos úteis-->
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ARQUIVOS ÚTEIS
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="./arquivos/apresentaçao.pdf" target="_blank">Apresentação da Brasil</a>
+            <a class="dropdown-item" href="./arquivos/listadeprodutos.pdf" target="_blank">Mercadorias</a>
+            <a class="dropdown-item" href="./arquivos/FICHA CADASTRO BRASIL DOS PARAFUSOS.pdf" target="_blank">Ficha de Cadastro da Brasil</a>
+            <a class="dropdown-item" href="./arquivos/FICHA CADAS.CLIENTES BRASIL 09.07.20..xlsx" target="_blank">Ficha de Cadastro de clientes</a>
+            <a class="dropdown-item" href="./arquivos/Controle de Itens Inventariados.XLSX" target="_blank">Planilha de controle de itens inventariados (atualizada em 04/06)</a>
+          
+          </div>
+        </div>
+        <br>
+      
+        <div class="dropdown"> <!--Botão de manuais-->
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MANUAIS / INSTRUÇÕES
+          </a>
+          
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="./arquivos/manuais/Manual Siger.pdf" target="_blank">Manual Oficial SIGER</a>
+            <a class="dropdown-item" href="https://www.rech.com.br/help/2010/index.htm" target="_blank">Manual Básico do SIGER (RECOMENDO ESTE)</a>
+            <a class="dropdown-item" href="./arquivos/manuais/basico.pdf" target="_blank">Manual Básico (EM DESENVOLVIMENTO)</a>
+            <a class="dropdown-item" href="./arquivos/manuais/cadastrodeproduto.pdf" target="_blank">Como cadastrar produtos</a>
+            <a class="dropdown-item" href="#" onclick="manualbasico()">Acessar manual básico do SIGER pelo próprio sistema</a>
+            <a class="dropdown-item" href="#" onclick="cancelaseparacao()">Cancelar separação de pedido</a>
+            <a class="dropdown-item" href="#" onclick="nfpelocupom()">Emitir NF de cupom fiscal</a>
+            <a class="dropdown-item" href="#" onclick="parcialmentefat()">Tirar saldo de pedido parcialmente faturado</a>
+            <a class="dropdown-item" href="#" onclick="vendasporcliente()">Relatórios de venda por cliente ou produtos</a>
+            <a class="dropdown-item" href="#" onclick="menunotas()">Consultar / reenviar NF já faturada</a>
+            <a class="dropdown-item" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx" target="_blank" onclick="intrucaoemail()">Consultar NFE no Sefaz</a>
+          </div> 
+        </div>
+          <br>
+        <div class="dropdown"> <!--Botão de e-mails-->
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            E-MAILS
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="mailto:fernando@brasildosparafusos.com.br" target="_blank">Alex</a>
+            <a class="dropdown-item" href="mailto:ana@brasildosparafusos.com.br" target="_blank">Ana</a>
+            <a class="dropdown-item" href="mailto:anajulia@brasildosparafusos.com.br" target="_blank">Ana Julia</a>
+            <a class="dropdown-item" href="mailto:daniel@brasildosparafusos.com.br" target="_blank">Daniel</a>
+            <a class="dropdown-item" href="mailto:diogo@brasildosparafusos.com.br" target="_blank">Diogo</a>
+            <a class="dropdown-item" href="mailto:felipe@brasildosparafusos.com.br" target="_blank">Felipe</a>
+            <a class="dropdown-item" href="mailto:fernando@brasildosparafusos.com.br" target="_blank">Fernando</a>
+            <a class="dropdown-item" href="mailto:jeferson@brasildosparafusos.com.br" target="_blank">Jeferson</a>
+            <a class="dropdown-item" href="mailto:financeiro@brasildosparafusos.com.br" target="_blank">Loiva</a>
+            <a class="dropdown-item" href="mailto:franciele@brasildosparafusos.com.br" target="_blank">Franciele</a>
+            <a class="dropdown-item" href="mailto:gustavo@brasildosparafusos.com.br" target="_blank">Gustavo</a>
+            <a class="dropdown-item" href="mailto:laura@brasildosparafusos.com.br" target="_blank">Laura</a>
+            <a class="dropdown-item" href="mailto:leandro@brasildosparafusos.com.br" target="_blank">Leandro</a>
+            <a class="dropdown-item" href="mailto:luciano@brasildosparafusos.com.br" target="_blank">Luciano</a>
+            <a class="dropdown-item" href="mailto:luizromero@brasildosparafusos.com.br" target="_blank">Luiz</a>
+            <a class="dropdown-item" href="mailto:marta@brasildosparafusos.com.br" target="_blank">Marta</a>
+            <a class="dropdown-item" href="mailto:matheus@brasildosparafusos.com.br" target="_blank">Matheus</a>
+            <a class="dropdown-item" href="mailto:paula@brasildosparafusos.com.br" target="_blank">Paula</a>
+            <a class="dropdown-item" href="mailto:rafael@brasildosparafusos.com.br" target="_blank">Rafael</a>
+            <a class="dropdown-item" href="mailto:rudi@brasildosparafusos.com.br" target="_blank">Rudi</a>
+            <a class="dropdown-item" href="mailto:salmo@brasildosparafusos.com.br" target="_blank">Salmo</a>
+            <a class="dropdown-item" href="mailto:tiago@brasildosparafusos.com.br" target="_blank">Tiago</a>
+            <a class="dropdown-item" href="mailto:valeria@brasildosparafusos.com.br" target="_blank">Valeria</a>
+            <a class="dropdown-item" href="mailto:william@brasildosparafusos.com.br" target="_blank">William</a>
+            <a class="dropdown-item" href="mailto:yasmim@brasildosparafusos.com.br" target="_blank">Yasmim</a>
+            <a class="dropdown-item" href="https://webmail-seguro.com.br/brasildosparafusos.com.br/" target="_blank">ACESSO PELO NAVEGADOR (senha : Brasil@01)</a>
+            
+          </div>
+      
+        </div>   
+          <br> 
+          <div class="dropdown"> <!--Botão RECH-->
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              RECH
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="https://www.rech.com.br/download/suporte-remoto" target="_blank">Download Team Viewer</a>
+              <a class="dropdown-item" href="http://www.skype.com/pt-br/download-skype/skype-for-computer/" target="_blank">Download Skype</a>
+              <a class="dropdown-item" href="contatosrech.html" target="_blank">Contatos RECH</a>
+            </div> 
+          </div>
+          <br>
+         <div class="dropdown"> <!--Botão MANUTENÇÃO-->
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MANUTENÇÃO AUTOMÁTICA DOS COMPUTADORES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://drive.google.com/uc?export=1veNydX18_E1iqRTaggNAMSji7lwmQOTj" download="impressoras.bat" target="_blank">Instalação de impressoras</a>
+            <a class="dropdown-item" href="https://drive.google.com/uc?export=download&id=1oUmZim0ac7siqDquJ46uHpEzu6XJrn_Q " target="_blank">Instalação do SIGER</a>
+            <a class="dropdown-item" href="./arquivos/Ninite Chrome Foxit Reader JDK AdoptOpenJDK 8 Installer.exe" target="_blank">Programas de uso comum</a>
+            
+
+          </div> 
+        </div>
+          <br> 
+          <div class="dropdown"> <!--OUTROS-->
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              OUTROS
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="mailto:felipe@brasildosparafusos.com.br?subject=Sugestão para o portal" target="_blank" role="button" ">ENVIAR SUGESTÃO DE MELHORIA PARA O PORTAL </a> 
+              <!--<a class="dropdown-item" href="https://app.pipefy.com/public/form/G67Nq9sL" target="_blank" role="button" ">Solicitação de compra de produto</a> -->
+              <a class="dropdown-item" href="https://pw.siger.com.br/bdp/" target="_blank" role="button" ">Controle do SIGER MOBILE (Usuário: admin | Senha: administrador)</a> 
+              
+            </div> 
+          </div>
+      </nav>
+      
+    </div>
+
+    <div class="col-2" > <!-- COLUNA 2 -->
+
+      <section id="ramais">
+        <h3 id="tituloramais">Ramais</h3> <!-- TABELAS DE RAMAIS -->
+        <div id="tabelas">
+          <div id="comercial"> <!-- TABELA DO COMERCIAL -->
+            <style type="text/css">
+              .tg  {border-collapse:collapse;border-spacing:0;}
+              .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                overflow:hidden;padding:10px 5px;word-break:normal;}
+              .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+              .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+              .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+              </style>
+              <table class="tg">
+              <thead>
+                <tr>
+                  <th class="tg-c3ow" colspan="3">Comercial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tg-c3ow">Nome</td>
+                  <td class="tg-0pky">Ramal</td>
+                  <td class="tg-c3ow">Direto</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Alex</td>
+                  <td class="tg-0pky">216</td>
+                  <td class="tg-c3ow">40669368</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Ana</td>
+                  <td class="tg-0pky">200</td>
+                  <td class="tg-c3ow">40669352</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Ana Julia</td>
+                  <td class="tg-0pky">205</td>
+                  <td class="tg-c3ow">40669357</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Ana Paula</td>
+                  <td class="tg-0pky">215</td>
+                  <td class="tg-c3ow">40669367</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Diogo</td>
+                  <td class="tg-0pky">206</td>
+                  <td class="tg-c3ow">40669358</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Leandro</td>
+                  <td class="tg-0pky">221</td>
+                  <td class="tg-c3ow">40669373</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Luiz</td>
+                  <td class="tg-0pky">212</td>
+                  <td class="tg-c3ow">989537194</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Gustavo</td>
+                  <td class="tg-0pky">201</td>
+                  <td class="tg-c3ow">40669353</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Marta</td>
+                  <td class="tg-0pky">218</td>
+                  <td class="tg-c3ow">989544502</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Rudi</td>
+                  <td class="tg-0pky">207</td>
+                  <td class="tg-c3ow">40669059</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Rudinei</td>
+                  <td class="tg-0pky">213</td>
+                  <td class="tg-c3ow">989536395</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Salmo</td>
+                  <td class="tg-0pky">203</td>
+                  <td class="tg-c3ow">40669355</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Tiago</td>
+                  <td class="tg-0pky">202</td>
+                  <td class="tg-c3ow">40669354</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Valeria</td>
+                  <td class="tg-0pky">204</td>
+                  <td class="tg-c3ow">40669356</td>
+                </tr>
+                <tr>
+                  <td class="tg-c3ow">Valeria</td>
+                  <td class="tg-0pky">209</td>
+                  <td class="tg-c3ow">989539620</td>
+                </tr>
+              </tbody>
+              </table>
+          </div>
+          
+          
+        </div>
+      </section>
+      
+    </div>
+
+    <div class="col-2" > <!-- COLUNA 3 TABELA DEPOSITO -->
+
+      <div id="deposito" style="margin-bottom: 30pt;" > <!-- TABELA DO DEPOSITO -->
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-baqh{text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-baqh" colspan="3">Depósito</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-baqh">Nome</td>
+              <td class="tg-baqh">Ramal </td>
+              <td class="tg-baqh">Direto</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Daniel</td>
+              <td class="tg-baqh">214</td>
+              <td class="tg-baqh">40669366</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Deposito</td>
+              <td class="tg-baqh">219</td>
+              <td class="tg-baqh">40669371</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Emissão de NF</td>
+              <td class="tg-baqh">222</td>
+              <td class="tg-baqh">40669374</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Zincagem</td>
+              <td class="tg-baqh">208</td>
+              <td class="tg-baqh">40669360</td>
+            </tr>
+          </tbody>
+          </table>
+      
+      </div>  
+  
+      <div id="administrativo"> <!-- TABELA DE ADMINISTRATIVO / TI -->
+        <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-baqh{text-align:center;vertical-align:top}
+          </style>
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-baqh" colspan="3">Administrativo / TI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-baqh">Nome</td>
+              <td class="tg-baqh">Ramal</td>
+              <td class="tg-baqh">Direto</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Felipe</td>
+              <td class="tg-baqh">220</td>
+              <td class="tg-baqh">40669366</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Financeiro</td>
+              <td class="tg-baqh">210</td>
+              <td class="tg-baqh">40669362</td>
+            </tr>
+            <tr>
+              <td class="tg-baqh">Loiva</td>
+              <td class="tg-baqh">217</td>
+              <td class="tg-baqh">989538091</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      
+    </div>
+
+  </div>
+
+
+  
+  
+</div>
+
+
+ <iframe width="560" height="580" src="https://app.pipefy.com/public/form/G67Nq9sL?embedded=true" frameborder="0"></iframe>
+  
+
+
+
+<footer id="footer">
+  <h5>Versão 1.01 | ©2021 </h5>
+</footer>
+
+  <script src="scripts/manuais.js"></script> <!-- MANUAIS -->
+  <script src="scripts/avisos.js"></script> <!-- AVISOS -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

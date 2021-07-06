@@ -1,0 +1,18 @@
+Estou colocando os .bat no Google Drive 
+
+
+uc?export=download&id= (preencher com o ID)
+
+https://drive.google.com/file/d/1oUmZim0ac7siqDquJ46uHpEzu6XJrn_Q/view?usp=sharing
+
+1oUmZim0ac7siqDquJ46uHpEzu6XJrn_Q
+
+https://drive.google.com/file/d/1veNydX18_E1iqRTaggNAMSji7lwmQOTj/view?usp=sharing
+
+
+
+https://drive.google.com/uc?export=download&id=1oUmZim0ac7siqDquJ46uHpEzu6XJrn_Q        SIGER.bat
+
+
+https://drive.google.com/uc?export=1veNydX18_E1iqRTaggNAMSji7lwmQOTj     impressoras.bat
+
