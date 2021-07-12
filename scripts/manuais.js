@@ -12,7 +12,12 @@ var parcial = "O jeito que a RECH recomenda para se tirar o pedido interno de um
 // teste instrucao
 var instrucao = "Seu programa de mensagens irá abrir pronto para me enviar um e-mail , apenas insira a sua sugestão no corpo do e-mail e envie."
 // como tirar relatório de vendas de um cliente
-var vendascliente = "Acesse o menu FAT 3-2-S , avance , você poderá ver dois tipos de filtros , por pedidos e por notas, você pode marcar os dois filtros ou apenas um , dentro dos filtros você poderá selecionar clientes , produtos , data , etc ... Avance , o sistema irá gerar o relatório e você irá escolher a forma de saída (PDF , Excel , arquivo de texto , etc...)"
+var vendascliente = "Acesse o menu FAT 3-2-S , avance , você poderá ver dois tipos de filtros , por pedidos e por notas, você pode marcar os dois filtros ou apenas um , dentro dos filtros você poderá selecionar clientes , produtos , data , etc ... Avance , o sistema irá gerar o relatório e você irá escolher a forma de saída (PDF , Excel , arquivo de texto , etc..."
+// como tirar relatório de vendas por produto
+var vendasProduto = "Acesse o menu FAT 5-3-S , avance , você verá 3 tipos de filtro , pode escolher por pedidos , notas e cupons , você pode marcar todos se quiser. Dentro de cada filtro você poderá selecionar clientes , produtos , período , etc ... Avance , o sistema irá gerar o relatório e você irá escolher a forma de saída (PDF , Excel , arquivo de texto , etc..."
+
+
+
 
 function cancelaseparacao(){
     alert(cancelarseparacao)
@@ -40,4 +45,8 @@ function intrucaoemail(){
 
 function vendasporcliente(){
     alert(vendascliente)
+}
+
+function vendasporproduto() {
+    alert(vendasProduto)
 }
