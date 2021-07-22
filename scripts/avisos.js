@@ -5,3 +5,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     alert(texto);
 }, false);
+
+
+// Mensagem TEXTO é exibida ao carregar a página
