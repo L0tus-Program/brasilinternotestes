@@ -11,31 +11,42 @@ header{
 	background: rgb(38,40,37);
 	background: linear-gradient(90deg, rgba(38,40,37,1) 0%, rgba(162,162,76,1) 29%, rgba(215,211,44,1) 55%, rgba(245,236,5,1) 100%);
 	display: flex;
-    position: relative;
+    position: static;
     border-bottom: 2pt solid black;
 	margin-bottom: 50pt;
 }
 
 
 header img{
+	position: unset;
 	height: 100pt;
 	right: 600pt;
 }
-
+/*
 header h1{
 	position: relative;
 	display: inline;
 	text-align: center;
 	/*left: 35%;
 	*/
+/*	margin-left: 25%;
+}
+*/
+
+header h1{
+	/*position: relative;*/
+	display: inline; 
+	text-align: center;
+	/*background-color: blue;*/
 	margin-left: 25%;
+	
+
 }
 
 
 
-
 #footer {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	left: 0% ;	
 	bottom: 0%;
