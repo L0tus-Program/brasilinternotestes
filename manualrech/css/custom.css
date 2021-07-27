@@ -1,0 +1,25 @@
+.de_ctrlimg {
+ display: none;
+}
+
+/* Ajusta o alinhamento da migalha de pão (à esquerda) */
+.b-breadCrumbs__item {
+    vertical-align: center !important;
+}
+
+/* Ajusta o alinhamento dos botões de controle (à direita) */
+.b-controlButtons__item {
+    vertical-align: center !important;
+}
+
+/* Ajusta o tamanho da fonte do botão da página anterior */
+.m-controlButtons__item__prev {
+    font-size: 1.0em !important;
+    font-weight: 600 !important;
+}
+
+/* Ajusta o tamanho da fonte do botão da próxima página */
+.m-controlButtons__item__next {
+    font-size: 1.0em !important;
+    font-weight: 600 !important;
+}
