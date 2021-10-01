@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Teste menu</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="menu.css">
+  
+</head>
+<body>
+<header >
+    <!-- menu retrátil lateral esquerda -->
+    <input type="checkbox" id="check">
+    <label id="icone" for="check" ></label>
+    <div class="barra">
+        <nav>
+            <a href="#">
+                <div class="Link">Arquivos Úteis</div>
+            </a>
+            <a href="#">
+                <div class="Link">Manuais / Instruções</div>
+            </a>
+            <a href="#">
+                <div class="Link">E-mails</div>
+            </a>
+            <a href="#">
+                <div class="Link">RECH</div>
+            </a>
+            <a href="#">
+                <div class="Link">Manutenção automática dos computadores</div>
+            </a>
+            <a href="#">
+                <div class="Link">Outros</div>
+            </a>
+            
+        </nav>
+    </div>
+    <!-- barra fixa azul horizontal -->
+    
+    <nav class="menu">
+        <a href="index.html">
+        <img src="./arquivos/semfundo.png" id="logo">
+        </a>
+    </nav>
+    
+    <label for="menu-hamburguer" >
+        <div class="mburg">
+        <span class="hamburguer"></span>
+        </div>
+    </label>
+</header>
+
+
+<section id="images" class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <span></span>
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-sm">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://lh3.googleusercontent.com/proxy/UZs0DJwTHPhZ_7m8SUzyj3IMvLRpSVo1o7wvK8Ip7uq76Mt3H0IGTCXLkZ_ZsHCR-GfBEOfY1uGrrnOWHy5L2rBBI3-1tjRV2efL6ZEMNKycO1s" alt="Primeiro Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://lh3.googleusercontent.com/proxy/5KFwILw893_eQitIfOIjqVPk6jlb-lUQ0T6PLh1qXtvhKOGIEksj5hCZXJqELhIRXQ-Kr1HKqxwD5ThdqOKCXRLvj72qKrV8onhUXaa4Mx_8TTA3HEoV6qOFxM1jBOK2K8yBnxhXW_gM_pI" alt="Segundo Slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://ferramentasgerais.vteximg.com.br/arquivos/ids/220794/Barra-Roscada-Zincada-MA-5mm---Ciser---24420101---Ciser.jpg?v=636735737054900000" alt="Terceiro Slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section id="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.151289686126!2d-51.20688438488575!3d-30.003811981897083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979920fd7de91%3A0xf6dba94915ca7989!2sBrasil%20dos%20Parafusos%20Comercial%20Ltda.!5e0!3m2!1spt-BR!2sbr!4v1632319545185!5m2!1spt-BR!2sbr" width="100%" height=800px style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+
+<script src="scripts/manuais.js"></script> <!-- MANUAIS -->
+<script src="./scripts/scripts.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

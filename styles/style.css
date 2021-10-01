@@ -23,6 +23,15 @@ header img{
 	right: 600pt;
 }
 /*
+header img:hover{
+	
+	height: 120pt;
+	right: 650pt;
+}
+*/
+
+
+/*
 header h1{
 	position: relative;
 	display: inline;
@@ -39,8 +48,6 @@ header h1{
 	text-align: center;
 	/*background-color: blue;*/
 	margin-left: 25%;
-	
-
 }
 
 

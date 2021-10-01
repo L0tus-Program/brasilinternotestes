@@ -17,7 +17,19 @@ var vendascliente = "Acesse o menu FAT 3-2-S , avance , você poderá ver dois t
 var vendasProduto = "Acesse o menu FAT 5-3-S , avance , você verá 3 tipos de filtro , pode escolher por pedidos , notas e cupons , você pode marcar todos se quiser. Dentro de cada filtro você poderá selecionar clientes , produtos , período , etc ... Avance , o sistema irá gerar o relatório e você irá escolher a forma de saída (PDF , Excel , arquivo de texto , etc..."
 // senhas da wifi
 var senhas = "SENHAS DAS REDES WIFI : \nexpedicao = brasil01\nBRASIL = 0017032681\nBRASIL DOS PARAFUSOS = brasil01"
+// contatos da refrieração pampa
+var pampa_dados = "Fone: 51 984941865\nE-mail: refripampa@hotmail.com"
+// como emitir pedido interno
+var pedint = "No gerenciamento de produtos, clique no botão Ped.Interno e avance(page down), por favor não altere nada neste menu. Na próxima tela você terá uma visualização do pedido interno. A sua esquerda terá uma série de opções, como imprimir ou enviar por e-mail."
 
+
+
+
+
+
+function pedidointerno(){
+    alert(pedint)
+}
 
 
 function cancelaseparacao(){
@@ -54,4 +66,8 @@ function vendasporproduto() {
 
 function senhaswifi(){
     alert(senhas)
+}
+
+function pampa(){
+    alert(pampa_dados)
 }
