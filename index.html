@@ -19,7 +19,7 @@
 
 <div class="container-fluid" id="principal">
   <div class="row">
-    <div class="col-8"  > <!-- COLUNA 1 MENU -->
+    <div class="col-md-4"  > <!-- COLUNA 1 MENU -->
       <nav class="menu"> <!-- MENU PRINCIPAL -->
         <div class="dropdown"><!--Botão de arquivos úteis-->
           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,8 +31,9 @@
             <a class="dropdown-item" href="./arquivos/listadeprodutos.pdf" target="_blank">Mercadorias</a>
             <a class="dropdown-item" href="./arquivos/FICHA CADASTRO BRASIL DOS PARAFUSOS.pdf" target="_blank">Ficha de Cadastro da Brasil</a>
             <a class="dropdown-item" href="./arquivos/FICHA CADAS.CLIENTES BRASIL 09.07.20..xlsx" target="_blank">Ficha de Cadastro de clientes</a>
-            <a class="dropdown-item" href="./arquivos/Controle de Itens Inventariados.XLSX" target="_blank">Planilha de controle de itens inventariados (atualizada em 04/06)</a>
-          
+            <a class="dropdown-item" href="./arquivos/Controle de Itens Inventariados.XLSX" target="_blank">Planilha de controle de itens inventariados (atualizada em 08/11)</a>
+            <a class="dropdown-item" href="./arquivos/Onboarding Brasil dos Parafusos.pptx.pdf" target="_blank">Onboarding Brasil dos Parafusos</a>
+            <a class="dropdown-item" href="./arquivos/PPT - Brasil dos Parafusos.zip" target="_blank">PPT Padrão Brasil dos Parafusos</a>
           </div>
         </div>
         <br>
@@ -43,18 +44,40 @@
           </a>
           
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            
             <a class="dropdown-item" href="./arquivos/manuais/Manual Siger.pdf" target="_blank">Manual Oficial SIGER</a>
             <a class="dropdown-item" href="manualrech\index.html" target="_blank">Manual Básico do SIGER (RECOMENDO ESTE)</a>
             <a class="dropdown-item" href="./arquivos/manuais/basico.pdf" target="_blank">Manual Básico (EM DESENVOLVIMENTO)</a>
             <a class="dropdown-item" href="./arquivos/manuais/cadastrodeproduto.pdf" target="_blank">Como cadastrar produtos</a>
-            <a class="dropdown-item" href="#" onclick="manualbasico()">Acessar manual básico do SIGER pelo próprio sistema</a>
-            <a class="dropdown-item" href="#" onclick="cancelaseparacao()">Cancelar separação de pedido</a>
-            <a class="dropdown-item" href="#" onclick="nfpelocupom()">Emitir NF de cupom fiscal</a>
-            <a class="dropdown-item" href="#" onclick="parcialmentefat()">Tirar saldo de pedido parcialmente faturado</a>
-            <a class="dropdown-item" href="#" onclick="vendasporcliente()">Relatórios de venda por clientes ou produtos (listagem de pedidos faturados)</a>
-            <a class="dropdown-item" href="#" onclick="vendasporproduto()">Relatório de vendas por clientes ou produtos (listagem de saida de produtos) </a>
-            <a class="dropdown-item" href="#" onclick="menunotas()">Consultar / reenviar NF já faturada</a>
             <a class="dropdown-item" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx" target="_blank" >Consultar NFE no Sefaz</a>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#manualbasico">
+              Acessar manual básico do SIGER pelo próprio sistema
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#cancelarseparacao">
+              Cancelar separação de pedido
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#nfcupom">
+              Emitir NF de cupom fiscal
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#pedidointerno">
+              Emitir pedido interno
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#pedidoparcial">
+              Tirar saldo de pedido parcialmente faturado
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#relatoriovendaspedidos">
+              Relatórios de venda por clientes ou produtos (listagem de pedidos faturados)
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#relatoriovendasprodutos">
+              Relatório de vendas por clientes ou produtos (listagem de saida de produtos)
+            </button>
+            <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#nffaturada">
+              Consultar / reenviar NF já faturada
+            </button>
+            
+
+ 
+
           </div> 
         </div>
           <br>
@@ -122,6 +145,52 @@
 
           </div> 
         </div>
+          <br>
+          <div class="dropdown"> <!--SLA-->
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SLA
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              
+              <!-- Botão para acionar modal -->
+              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#explicacaosla">
+                O que é um SLA?
+              </button>
+
+              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#SLAFinanceiro">
+                SLA Financeiro
+              </button>
+              <!--
+              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#SLATI">
+                SLA TI
+              </button>
+              -->
+            
+              <!-- FECHA MENU -->
+            </div> 
+          </div>
+          <br>
+          <div class="dropdown"> <!--Pessoas-->
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              PESSOAS
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              
+              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#financeiro">
+                Financeiro
+              </button>
+              
+              <a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1LJYytvJ2W_H0-KwWe_wFeXtGcp-y99OxFMGtRY2ahUc/edit?usp=sharing " target="_blank">Descrição de cargos Brasil dos Parafusos 2021</a>
+              
+              <a class="dropdown-item" href="arquivos/Política de Cargos e Salários- Brasil dos Parafusos jan2022.pdf" target="_blank">Política de cargos e salários</a>
+              <a class="dropdown-item" href="https://drive.google.com/file/d/1CC9gkseZERxC9YRNQqde-Xsqp2g6EhH9/view" target="_blank">Programa de PLR - Brasil dos Parafusos</a>
+          
+            
+              <!-- FECHA MENU -->
+            </div> 
+          </div>
           <br> 
           <div class="dropdown"> <!--OUTROS-->
             <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -131,132 +200,119 @@
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <a class="dropdown-item" href="mailto:felipe@brasildosparafusos.com.br?subject=Sugestão para o portal" target="_blank" role="button" >ENVIAR SUGESTÃO DE MELHORIA PARA O PORTAL </a> 
               <!--<a class="dropdown-item" href="https://app.pipefy.com/public/form/G67Nq9sL" target="_blank" role="button" ">Solicitação de compra de produto</a> -->
-              <a class="dropdown-item" href="https://pw.siger.com.br/bdp/" target="_blank" role="button" >Controle do SIGER MOBILE (Usuário: admin | Senha: administrador)</a> 
+              <a class="dropdown-item" href="http://pw.siger.com.br/bdp/" target="_blank" role="button" >Controle do SIGER MOBILE (Usuário: admin | Senha: administrador)</a> 
               <a class="dropdown-item" href="https://www.nfe.fazenda.gov.br/portal/disponibilidade.aspx?versao=2.00" target="_blank" role="button" >Sefaz fora do ar?</a> 
-              <a class="dropdown-item" href="#" role="button" onclick="senhaswifi()">Senhas Wifi</a> 
-              <a class="dropdown-item" href="https://www.alphatec.com.br" target="_blank" role="button" >Alphatec (telefones)</a> 
-              <a class="dropdown-item" href="mailto:refripampa@hotmail.com" target="_blank" role="button" >Refrigeração Pampa (Ar condicionado)</a> 
-              
+              <button type="button" class="btn btn-primary dropdown-item" data-toggle="modal" data-target="#wifi">
+                Senhas da WIFI
+              </button>
+              <a class="dropdown-item" href="https://www.alphatecrs.com.br" target="_blank" role="button" >Alphatec (telefones)</a> 
+              <a class="dropdown-item" href="http://api.whatsapp.com/send?phone=555133623000" target="_blank" role="button" >Alphatec (whats)</a>
+              <a class="dropdown-item" href="mailto:refripampa@hotmail.com" target="_blank" role="button" >Refrigeração Pampa (Ar condicionado) E-mail</a> 
+              <a class="dropdown-item" href="#" onclick="pampa()" role="button" >Refrigeração Pampa (Ar condicionado) Dados de contato</a>              
               
             
               
             </div> 
           </div>
+
       </nav>
       
     </div>
 
-    <div class="col-2" > <!-- COLUNA 2 -->
+    <div class="col-4" > <!-- COLUNA 2 -->
 
       <section id="ramais">
-        <h3 id="tituloramais">Ramais</h3> <!-- TABELAS DE RAMAIS -->
+        <!-- TABELAS DE RAMAIS -->
         <div id="tabelas">
-          <div id="comercial"> <!-- TABELA DO COMERCIAL -->
-            <style type="text/css">
-              .tg  {border-collapse:collapse;border-spacing:0;}
-              .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                overflow:hidden;padding:10px 5px;word-break:normal;}
-              .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-              .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-              .tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:top}
-              </style>
-              <table class="tg">
-              <thead>
-                <tr>
-                  <th class="tg-c3ow" colspan="3">Comercial</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="tg-c3ow">Nome</td>
-                  <td class="tg-0pky">Ramal</td>
-                  <td class="tg-c3ow">Direto</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Alex</td>
-                  <td class="tg-0pky">216</td>
-                  <td class="tg-c3ow">40669368</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Ana</td>
-                  <td class="tg-0pky">200</td>
-                  <td class="tg-c3ow">40669352</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Ana Julia</td>
-                  <td class="tg-0pky">205</td>
-                  <td class="tg-c3ow">40669357</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Marta</td>
-                  <td class="tg-0pky">218</td>
-                  <td class="tg-c3ow">989544502</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Diogo</td>
-                  <td class="tg-0pky">206</td>
-                  <td class="tg-c3ow">40669358</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Diego / Franciele</td>
-                  <td class="tg-0pky">220</td>
-                  <td class="tg-c3ow">40669366</td>
-                </tr>
-                
-                <tr>
-                  <td class="tg-c3ow">Leandro</td>
-                  <td class="tg-0pky">221</td>
-                  <td class="tg-c3ow">40669373</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Luiz</td>
-                  <td class="tg-0pky">212</td>
-                  <td class="tg-c3ow">989537194</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Gustavo</td>
-                  <td class="tg-0pky">201</td>
-                  <td class="tg-c3ow">40669353</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Paula</td>
-                  <td class="tg-0pky">215</td>
-                  <td class="tg-c3ow">40669367</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Rudi</td>
-                  <td class="tg-0pky">207</td>
-                  <td class="tg-c3ow">40669059</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Rudinei</td>
-                  <td class="tg-0pky">213</td>
-                  <td class="tg-c3ow">989536395</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Salmo</td>
-                  <td class="tg-0pky">203</td>
-                  <td class="tg-c3ow">40669355</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Tiago</td>
-                  <td class="tg-0pky">202</td>
-                  <td class="tg-c3ow">40669354</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Valeria</td>
-                  <td class="tg-0pky">204</td>
-                  <td class="tg-c3ow">40669356</td>
-                </tr>
-                <tr>
-                  <td class="tg-c3ow">Valeria</td>
-                  <td class="tg-0pky">209</td>
-                  <td class="tg-c3ow">989539620</td>
-                </tr>
-              </tbody>
-              </table>
-          </div>
+          <table class="table table-borderless table-dark">
+            <h3 id="tituloramais">Comercial</h3> <!--Tabela comercial-->
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Ramal</th>
+                <th scope="col">Direto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alex</td>
+                <td>216</td>
+                <td>40669368</td>
+              </tr>
+              <tr>
+                <td>Ana</td>
+                <td>200</td>
+                <td>40669352</td>
+              </tr>
+              <tr>
+                <td>Ana Julia</td>
+                <td>205</td>
+                <td>40669357</td>
+              </tr>
+              <tr>
+                <td>Marta</td>
+                <td>218</td>
+                <td>989544502</td>
+              </tr>
+              <tr>
+                <td>Diogo</td>
+                <td>206</td>
+                <td>40669358</td>
+              </tr>
+              <tr>
+                <td>Diego/Franciele</td>
+                <td>220</td>
+                <td>40669366</td>
+              </tr>
+              <tr>
+                <td>Leandro</td>
+                <td>221</td>
+                <td>40669373</td>
+              </tr>
+              <tr>
+                <td>Luiz</td>
+                <td>212</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Gustavo</td>
+                <td>201</td>
+                <td>40669353</td>
+              </tr>
+              <tr>
+                <td>Paula</td>
+                <td>215</td>
+                <td>40669367</td>
+              </tr>
+              <tr>
+                <td>Rudi</td>
+                <td>207</td>
+                <td>40669059</td>
+              </tr>
+              <tr>
+                <td>Salmo</td>
+                <td>203</td>
+                <td>40669355</td>
+              </tr>
+              <tr>
+                <td>Tiago</td>
+                <td>202</td>
+                <td>40669354</td>
+              </tr>
+              <tr>
+                <td>Paula</td>
+                <td>215</td>
+                <td>40669367</td>
+              </tr>
+              <tr>
+                <td>Valeria</td>
+                <td>204</td>
+                <td>40669356</td>
+              </tr>
+          
+            </tbody>
+          </table>
+          
           
           
         </div>
@@ -264,93 +320,87 @@
       
     </div>
 
-    <div class="col-2" > <!-- COLUNA 3 TABELA DEPOSITO E ADMINISTRATIVO / TI-->
+    <div class="col-4" > <!-- COLUNA 3 TABELA DEPOSITO E ADMINISTRATIVO / TI-->
 
       <div id="deposito" style="margin-bottom: 30pt;" > <!-- TABELA DO DEPOSITO -->
-        <style type="text/css">
-          .tg  {border-collapse:collapse;border-spacing:0;}
-          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg .tg-baqh{text-align:center;vertical-align:top}
-          </style>
-          <table class="tg">
+        <table class="table table-borderless table-dark">
+          <h3 id="tituloramais">Estoque</h3> <!--Tabela estoque-->
           <thead>
             <tr>
-              <th class="tg-baqh" colspan="3">Depósito</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Ramal</th>
+              <th scope="col">Direto</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="tg-baqh">Nome</td>
-              <td class="tg-baqh">Ramal </td>
-              <td class="tg-baqh">Direto</td>
+              <td>Daniel</td>
+              <td>214</td>
+              <td>40669366</td>
             </tr>
             <tr>
-              <td class="tg-baqh">Daniel</td>
-              <td class="tg-baqh">214</td>
-              <td class="tg-baqh">40669366</td>
+              <td>Deposito</td>
+              <td>219</td>
+              <td>40669371</td>
             </tr>
             <tr>
-              <td class="tg-baqh">Deposito</td>
-              <td class="tg-baqh">219</td>
-              <td class="tg-baqh">40669371</td>
+              <td>Daniel (Emissão de NF)</td>
+              <td>222</td>
+              <td>40669371</td>
             </tr>
             <tr>
-              <td class="tg-baqh">Emissão de NF</td>
-              <td class="tg-baqh">222</td>
-              <td class="tg-baqh">40669374</td>
+              <td>Jeferson</td>
+              <td>209</td>
+          
             </tr>
             <tr>
-              <td class="tg-baqh">Zincagem</td>
-              <td class="tg-baqh">208</td>
-              <td class="tg-baqh">40669360</td>
+              <td>Mezanino</td>
+              <td>213</td>
+        
             </tr>
+            <tr>
+              <td>Zincagem</td>
+              <td>208</td>
+              <td>40669360</td>
+            </tr>
+        
+           
+        
           </tbody>
-          </table>
-      
+        </table>
       </div>  
   
       <div id="administrativo"> <!-- TABELA DE ADMINISTRATIVO / TI -->
-        <style type="text/css">
-          .tg  {border-collapse:collapse;border-spacing:0;}
-          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-          .tg .tg-baqh{text-align:center;vertical-align:top}
-          </style>
-          <table class="tg">
+        <table class="table table-borderless table-dark">
+          <h3 id="tituloramais">Administrativo/TI</h3> <!--Tabela administrativo/ti-->
           <thead>
             <tr>
-              <th class="tg-baqh" colspan="3">Administrativo / TI</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Ramal</th>
+              <th scope="col">Direto</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="tg-baqh">Nome</td>
-              <td class="tg-baqh">Ramal</td>
-              <td class="tg-baqh">Direto</td>
+              <td>Felipe/Yasmim</td>
+              <td>210</td>
+              <td>40669362</td>
             </tr>
             <tr>
-              <td class="tg-baqh">Felipe / Yasmim</td>
-              <td class="tg-baqh">210</td>
-              <td class="tg-baqh">40669362</td>
+              <td>Fernando</td>
+              <td>211</td>
+              <td>048 984780170</td>
             </tr>
             <tr>
-              <td class="tg-baqh">Fernando</td>
-              <td class="tg-baqh">211</td>
-              <td class="tg-baqh">048 984780170</td>
+              <td>Loiva</td>
+              <td>217</td>
+              <td>989538091</td>
             </tr>
             
-            <tr>
-              <td class="tg-baqh">Loiva</td>
-              <td class="tg-baqh">217</td>
-              <td class="tg-baqh">989538091</td>
-            </tr>
           </tbody>
-          </table>
+        </table>
+        
+        
       </div>
       
     </div>
@@ -366,11 +416,408 @@
  <iframe width="560" height="580" src="https://app.pipefy.com/public/form/G67Nq9sL?embedded=true" frameborder="0"></iframe>
 -->
 
+<!-- Modal SLA TI-->
+<div class="modal fade" id="SLATI" tabindex="-1" role="dialog" aria-labelledby="SLAFinanceiro" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">SLA Financeiro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Conteúdo sla ti
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal SLA FINANCEIRO-->
+<div class="modal fade" id="SLAFinanceiro" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">SLAs Financeiro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>SLA de atendimento do setor financeiro</h3>  
+       <h4>SLA máximo de atendimento de 2 horas para:</h4>
+       <ul>
+         <li>Cadastro</li>
+         <li>Confirmação de boleto</li>
+         <li>Confirmação de depósito</li>
+         <li>Liberação de pedido</li>
+         <li>Pendência financeira do cliente</li>
+         <li>Revisão de crédito</li>
+       </ul>
+        
+        <h4>Exceções:</h4>
+        <ul>
+          <li>Consulta ao SPC - 45 minutos</li>
+          <li>Pedidos acima de 5 mil reais - 4 horas</li>
+          <li>Compra de equipamentos - 1 dia</li>
+        </ul>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal explicacaosla-->
+
+<div class="modal fade" id="explicacaosla" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Explicação SLA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>O que é um SLA?</h3>  
+       Um Contrato de nível de serviço, ou SLA, é uma medida de comum acordo sobre os tempos de reação e de resolução que uma equipe oferece aos clientes ou colegas. <br>
+       Resumindo, é o prazo máximo de retorno a uma solicitação realizada.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal setor financeiro-->
+
+<div class="modal fade" id="financeiro" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Resoponsabilidade dos membros do setor financeiro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <h3>Funções dos membros do setor financeiro</h3>  
+        <h4>Fernando:</h4>
+        <ul>
+          <li>Identificação da movimentação financeira para a contabilidade</li>
+          <li>Apoio no fechamento da folha de pagamento e comissão</li>
+          <li>Conciliar o balancete junto com a contabilidade</li>
+          <li>Realizar os pagamentos da empresa</li>
+          <li>Controlar o caixa da empresa (dinheiro que fica na empresa)</li>
+          <li>Fechar o caixa da loja</li>
+          <li>Informar os diretores da empresa sobre o fluxo de caixa empresa</li>
+          <li>Atendimento aos serviços de terceiros (banco, consultoria, contabilidade e jurídico )</li>
+          <li>Criação de cadastro de novos fornecedores</li>
+          <li>Suporte ao setor de compras nas dúvidas referente a algum imposto</li>
+          <li>Baixar os pagamentos realizados</li>
+        </ul> 
+        
+        <h4>Loiva:</h4>  
+
+        <ul>
+          <li>Realizar análise de crédito de novos clientes e liberação de aumento para os clientes antigos</li>
+          <li>Criação de cadastro dos novos clientes e atualização dos cliente já ativos</li>
+          <li>Realizar cobrança do clientes inadimplentes (envio de boleto e via telefone)</li>
+          <li>Realizar a entrada das notas de devolução e recusa de cliente, realizando o abatimento nos boletos ou mantendo o valor como crédito</li>
+          <li>Identificar os pagamentos realizados via transferência</li>
+          <li>Fechamento da vendas com os valores a serem pagos de comissão</li>
+          <li>Acompanhar o relógio-ponto dos funcionários</li>
+          <li>Suporte ao setor de vendas como conferência de valores depositados para compras à vista</li>
+          <li>Envio do arquivo com os boletos para o banco</li>
+        </ul>
+        
+
+        <h4>Yasmim: </h4>
+
+        <ul>
+          <li>Renovar o limite de crédito dos clientes antigos</li>
+          <li>Realizar as baixas dos boletos pagos</li>
+          <li>Suporte no fechamento de caixa da empresa</li>
+          <li>Atendimento a clientes, como envio de segunda via de boleto, nota fiscal XML</li>
+          <li>Atendimento ao serviço de terceiro (banco, contabilidade), coleta de assinaturas, envio dos documentos assinados</li>
+          <li>Envio das vendas diárias para o comercial, financeiro e direção da empresa</li>
+        </ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Testes modal nos manuais-->
+
+<!--Modal Acessar manual basico do SIGER pelo próprio sistema-->
+<div class="modal fade" id="manualbasico" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Botão 'Manual básico do SIGER' no canto superior direito da sua tela , irá abrir o manual no navegador. Nele você encontrará as instruções para utilização de quase todas as telas , filtros , relatórios , etc.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Modal Cancelar separação de pedido-->
+<div class="modal fade" id="cancelarseparacao" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Para cancelar a separação do pedido , acessamos o menu 6-6-D do módulo de vendas, você pode filtrar o cancelamento pelo pedido. Em seguida irá apresentar os itens cuja separação será cancelada , selecione os que você quiser e avançe.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal Emitir NF de cupom fiscal-->
+
+<div class="modal fade" id="nfcupom" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Para emitir NF apartir do cupom , acessar menu FAT 2-3-E
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--MODAL Emitir pedido interno-->
+<div class="modal fade" id="pedidointerno" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        No gerenciamento de pedidos, clique no botão Ped.Interno e avance(page down), por favor não altere nada neste menu. Na próxima tela você terá uma visualização do pedido interno. A sua esquerda terá uma série de opções, como imprimir ou enviar por e-mail.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--MODAL Tirar saldo de pedido parcialmente faturado-->
+<div class="modal fade" id="pedidoparcial" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        O jeito que a RECH recomenda para se tirar o pedido interno de um saldo é pelo menu FAT 3-6-P , filtre pelo código do pedido , selecione se deseja ou não acumular os itens no pedido interno e avançe. Fora isso , tem o jeito que nós nos acostumamos a fazer , que é pelo botão de pedido interno com seleção na manutenção consolidada dos pedidos, porém este método foi 'abandonado' pela RECH 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--MODAL Relatórios de venda por clientes ou produtos (listagem de pedidos faturados)-->
+<div class="modal fade" id="relatoriovendaspedidos" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        "Acesse o menu FAT 5-3-S , avance , você verá 3 tipos de filtro , pode escolher por pedidos , notas e cupons , você pode marcar todos se quiser. Dentro de cada filtro você poderá selecionar clientes , produtos , período , etc ... Avance , o sistema irá gerar o relatório e você irá escolher a forma de saída (PDF , Excel , arquivo de texto , etc...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--MODAL Relatório de vendas por clientes ou produtos (listagem de saida de produtos)-->
+<div class="modal fade" id="relatoriovendasprodutos" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Acesse o menu FAT 5-3-S , avance , você verá 3 tipos de filtro , pode escolher por pedidos , notas e cupons , você pode marcar todos se quiser. Dentro de cada filtro você poderá selecionar clientes , produtos , período , etc ... Avance , o sistema irá gerar o relatório e você irá escolher a forma de saída (PDF , Excel , arquivo de texto , etc...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--MODAL Consultar / reenviar NF já faturada-->
+<div class="modal fade" id="nffaturada" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Como cancelar a separação de um pedido</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Para reenviar ou consultar notas já faturadas, podemos ir para o menu FAT 2-3-G e selecionar a primeira opção. Ali é só filtrar a nota que queremos e , na parte inferior da tela teremos as opções disponíveis para a nota selecionada.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
-<footer id="footer">
-  <h5>Versão 1.02 | ©2021 </h5>
+
+<!--modal wifi-->
+
+<div class="modal fade" id="wifi" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalLongoExemplo">Senhas WIFI</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        expedicao = brasil01 <br>
+        BRASIL = 0017032681 <br>
+        BRASIL DOS PARAFUSOS = brasil01
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Teste planilha bootstrap-->
+
+
+<footer class="page-footer">
+  <h5>Versão 1.04 | ©2021 </h5>
 </footer>
 
   <script src="scripts/manuais.js"></script> <!-- MANUAIS -->
