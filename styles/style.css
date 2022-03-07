@@ -7,21 +7,20 @@
 html, body {height:100%;position: relative;}
 
 
-header{
-	background: rgb(38,40,37);
+/*header{
+/*	background: rgb(38,40,37);
 	background: linear-gradient(90deg, rgba(38,40,37,1) 0%, rgba(162,162,76,1) 29%, rgba(215,211,44,1) 55%, rgba(245,236,5,1) 100%);
 	display: flex;
     position: static;
     border-bottom: 2pt solid black;
-	margin-bottom: 50pt;
-}
+	margin-bottom: 10pt; 
+}*/
 
-
+/*
 header img{
-	position: unset;
 	height: 100pt;
 	right: 600pt;
-}
+}*/
 /*
 header img:hover{
 	
@@ -42,24 +41,29 @@ header h1{
 }
 */
 
-header h1{
-	/*position: relative;*/
-	display: inline; 
+/*header h1{
+	position: absolute;
+	display: inline;
 	text-align: center;
-	/*background-color: blue;*/
-	margin-left: 25%;
+	width: auto;
+	/*background-color: blue;
+	margin-left: 10%;
+	margin-right: 15%;
+	margin-top: 30pt;
 }
+*/
 
 
 
-#footer {
+
+/*#footer {
 	position: relative;
 	width: 100%;
 	left: 0% ;	
 	bottom: 0%;
-	/*height: 10%;*/
+	/*height: 10%;
 	margin-top: 5pt;
-}
+}*/
 
 
 
@@ -73,9 +77,10 @@ header h1{
 	margin-right: 30pt;*/
 }
 
+/*
 #comercial{
 /*	margin-left: 30pt;
-	margin-right: 30pt; */
+	margin-right: 30pt; 
 }
 
 /*
