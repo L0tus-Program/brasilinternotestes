@@ -6,7 +6,12 @@
 
 html, body {height:100%;position: relative;}
 
-
+/*
+.video:hover{
+	width: 500px !important;
+	position: sticky;
+	z-index: -1;
+}
 /*header{
 /*	background: rgb(38,40,37);
 	background: linear-gradient(90deg, rgba(38,40,37,1) 0%, rgba(162,162,76,1) 29%, rgba(215,211,44,1) 55%, rgba(245,236,5,1) 100%);
@@ -97,3 +102,5 @@ header h1{
 	top: 31pt;
 	right: 300pt;
 }*/
+
+

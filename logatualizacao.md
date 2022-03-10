@@ -8,3 +8,5 @@
 - Instalação do SIGER
 - Senhas wifi
 - FAT 5-3-S relatório de listagem de vendas
+- Contato manutenção ar condicionado -> não tem site  nvb
+- Contato manutenção dos telefones
