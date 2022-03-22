@@ -4,103 +4,74 @@
 	src: url(fonte/MetalEncasement.ttf);
 }
 
-html, body {height:100%;position: relative;}
+html {height:100%;position: relative;}
 
-/*
-.video:hover{
-	width: 500px !important;
-	position: sticky;
-	z-index: -1;
-}
-/*header{
-/*	background: rgb(38,40,37);
-	background: linear-gradient(90deg, rgba(38,40,37,1) 0%, rgba(162,162,76,1) 29%, rgba(215,211,44,1) 55%, rgba(245,236,5,1) 100%);
-	display: flex;
-    position: static;
-    border-bottom: 2pt solid black;
-	margin-bottom: 10pt; 
-}*/
-
-/*
-header img{
-	height: 100pt;
-	right: 600pt;
-}*/
-/*
-header img:hover{
-	
-	height: 120pt;
-	right: 650pt;
-}
-*/
-
-
-/*
-header h1{
+body{
+	height: 100%;
 	position: relative;
-	display: inline;
-	text-align: center;
-	/*left: 35%;
+	/*background-image: url(../arquivos/fundo.jpg);
+	background-size: cover;
 	*/
-/*	margin-left: 25%;
+
 }
-*/
 
-/*header h1{
-	position: absolute;
-	display: inline;
-	text-align: center;
-	width: auto;
-	/*background-color: blue;
-	margin-left: 10%;
-	margin-right: 15%;
-	margin-top: 30pt;
+.missaovisao {
+    background: url(https://brasildosparafusos.com.br/wp-content/themes/bones/library/images/banner-missao.jpg) no-repeat center center/cover;
+    padding: 60px 0 45px 0;
+	overflow: hidden;
+	font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-align: start;
 }
-*/
 
 
-
-
-/*#footer {
-	position: relative;
+.missaovisao h4{
 	width: 100%;
-	left: 0% ;	
-	bottom: 0%;
-	/*height: 10%;
-	margin-top: 5pt;
-}*/
-
-
-
-.container-fluid .row .col #ramais{
-	display: inline;
+    font-size: 76px;
+    font-style: italic;
+    font-family: "Marianina", sans-serif;
+    color: #373737;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    line-height: 78px;
+    margin-top: 0;
+	font-weight: 700;	
 }
 
-#tituloramais{
-	text-align: center;
-	/*margin-left: 30pt;
-	margin-right: 30pt;*/
-}
-
-/*
-#comercial{
-/*	margin-left: 30pt;
-	margin-right: 30pt; 
-}
-
-/*
-#deposito{
-	position: absolute;
-	display: none;
-	top: 31pt;
-	right: 50pt;
+.valores{
+	background: url(../arquivos/lines.png);
+	font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
 
 }
 
-#administrativo{
-	position: absolute;
-	top: 31pt;
-	right: 300pt;
-}*/
+#titulovalores{
+	width: 880px;
+	height: 103px;
+	margin-right: 215px;
+	margin-left: 215px;
+}
 
+#titulovalores h4{
+	width: 100%;
+    font-size: 76px;
+    font-style: italic;
+    font-family: "Marianina",sans-serif;
+    color: #f5da6b;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    line-height: 78px;
+    margin-top: 0;
+	font-weight: 700;
+}
 
+.sub{
+	padding-bottom: 250px !important;
+	padding-right: 65px;
+	font-size: 14px;
+	
+	
+	font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
