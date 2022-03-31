@@ -9,9 +9,7 @@ html {height:100%;position: relative;}
 body{
 	height: 100%;
 	position: relative;
-	/*background-image: url(../arquivos/fundo.jpg);
-	background-size: cover;
-	*/
+	
 
 }
 
@@ -27,7 +25,7 @@ body{
 
 .missaovisao h4{
 	width: 100%;
-    font-size: 76px;
+    font-size: 11vh;
     font-style: italic;
     font-family: "Marianina", sans-serif;
     color: #373737;
@@ -36,6 +34,10 @@ body{
     line-height: 78px;
     margin-top: 0;
 	font-weight: 700;	
+}
+
+.missaovisao p{
+	font-size: 3vh;
 }
 
 .valores{
@@ -55,7 +57,7 @@ body{
 
 #titulovalores h4{
 	width: 100%;
-    font-size: 76px;
+    font-size: 11vh;
     font-style: italic;
     font-family: "Marianina",sans-serif;
     color: #f5da6b;
@@ -66,6 +68,16 @@ body{
 	font-weight: 700;
 }
 
+.valores p{
+	font-size: 3vh;
+	padding-bottom: 5vh;
+}
+
+.valores strong{
+	font-size: 3vh;
+	margin: 1px;
+}
+
 .sub{
 	padding-bottom: 250px !important;
 	padding-right: 65px;
@@ -74,4 +86,8 @@ body{
 	
 	font-family: Muli, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+}
+
+.icones{
+	padding-left: 1vh;
 }
