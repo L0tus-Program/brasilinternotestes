@@ -1,12 +1,7 @@
-# LOG DE ATUALIZAÇÃO 1.02
+# LOG DE ATUALIZAÇÃO
 
-- Melhoria da responsividade no layout de corpo do site *
-- Manual (onde ver relatórios de vendas por cliente ou produto)
-- Manual interno do siger acessado diretamente pelo site
-- Instalador de programas de uso padrão da Brasil , utilizando pacote Ninite
-- Desativar o Windows Update permanentemente
-- Instalação do SIGER
-- Senhas wifi
-- FAT 5-3-S relatório de listagem de vendas
-- Contato manutenção ar condicionado -> não tem site  nvb
-- Contato manutenção dos telefones
+- E-MAILS ATUALIZADOS
+
+- ADICIONADO BOTÃO PARA DOWNLOAD DE MATERIAIS GRÁFICOS DA BRASIL, OS MATERIAIS SERÃO ATUALIZADOS SEMPRE QUE TIVER ALGO NOVO - ARQUIVOS UTEIS - GERAL - MATERIAL GRAFICO
+
+- SETOR FINANCEIRO ATUALIZADO (AINDA PRECISO VER ISSO COM A MAYARA)
