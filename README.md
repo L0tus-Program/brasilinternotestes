@@ -5,7 +5,7 @@
 # brasilinterno
 Portal interno da Brasil dos Parafusos
 
-Versão atual : 1.01
+Versão atual : 2.0
 
 Projeto criado para facilitar a localização de informações a respeito dos processos internos da Brasil dos Parafusos.
 
@@ -19,24 +19,24 @@ Funções implementadas :
 - Diversos manuais e intruções de uso do sistema 
 - Tabela com todos os ramais da empresa
 - Botão de sugestão de melhoria para o portal
+- Vídeos institucionais
+- Formulário para abertura de chamado
 
 
-Funções que ainda serão implementadas :
+A fazer :
 
-- Avaliação de setores da empresa via formulário (Confirmar com o Diogo) (autorizado)
-- Conexão com o BI do SIGER para acesso em tempo real dos estoques por fora do sistema (caso seja contratado)
-- Script para adicionar todas as impressoras da Brasil dos Parafusos de uma só vez na máquina do usuário (tag de download não suportada atualmente)
-- Instalador de programas de uso padrão da Brasil , utilizando pacote Ninite
-- Script de instalação do SIGER , para casos de ausência da TI 
-- Implementação de protocolo para solicitações de longo prazo , para maior controle dos processos internos da empresa.
-  Obs: Necessária adaptação do site como Windows Service para ficar rodando o Node , Python também parece viável , mas preciso estudar melhor a documentação da Microsoft
-  https://docs.microsoft.com/pt-br/visualstudio/python/configure-web-apps-for-iis-windows?view=vs-2019
+- Atualizar lista de e-mails
+- Terminar de linkar os contatos da RECH
+- Atualizar a tecnologia para VUE e utilizar logins por setor para visualização de documentos (Solicitação do Diogo)
+  
 
+Idéias :
+
+- Ferramenta to do list utilizando a cache storage (ou o próprio servidor salvando no usuário) para salvar as tarefas dos colaboradores
 
 
 
 
 --> Como acessar :
 
-Digite "felipe" no seu navegador , dependendo do navegador pode aparecer uma mensagem perguntando se você deseja acessar "felipe/" , basta clicar e você irá entrar no portal.
-Detalhe que apenas os computadores que estão aqui na Brasil dos Parafusos podem acessar este portal.
+interno.brasildosparafusos.com.br
